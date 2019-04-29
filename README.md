@@ -9,4 +9,6 @@ Repositorio de Análisis y Desarrollo de Sistemas de Información:
 6. css3
 7. sass
 8. javascript
+9. boostrap
+10. C++
 ----
