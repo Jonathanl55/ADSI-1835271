@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Nuevos Elementos de Entrada</title>
+</head>
+<body>
+	<h1>Nuevos Elementos de Entrada</h1>
+	<form action="" method="post">
+	<div>
+		<input type="email" placeholder="Correo Electrónico" autofocus required>
+	</div>
+	<div>
+		<label>Color: </label>
+	<input type="color" oninput="pcolor.value=this.value">
+	<output id="pcolor">Hola</output>
+	</div>
+	<!-- -->
+	<div>
+		<label>Fecha: </label>
+		<input type="date" oninput="odate.value=this.value">
+		<output id="odate"></output>
+	</div>
+	<!-- -->
+	<div>
+		<label>Numero 1: </label>
+		<input type="number" min="0" max="10" step="2" id="num1" oninput="osuma.value=parseInt(this.value)+parseInt(num2.value)" value="0" required>
+		<label>Numero 2: </label>
+		<input type="number" min="0" max="10" step="2" id="num2" oninput="osuma.value=parseInt(this.value)+parseInt(num1.value)" value="0" required>
+		<output id="osuma"></output>
+	</div>
+	<!-- -->
+	<div>
+		<label>Correo: </label>
+		<input type="email">
+	</div>
+	<!-- -->
+	<div>
+		<label>Mes: </label>
+		<input type="month">
+	</div>
+	<!-- -->
+	<div>
+		<label>Rango: </label>
+		<input type="range" min="1" max="100" oninput="orange.value=this.value">
+		<output id="orange"></output>
+	</div>
+	<!-- -->
+	<div>
+		<label>Busqueda: </label>
+		<input type="search">
+	</div>
+	<!-- -->
+	<div>
+		<label>Tiempo: </label>
+		<input type="time" autofocus>
+	</div>
+	<!-- -->
+	<div>
+		<input list="lenguajes">
+		<datalist id=lenguajes>
+			<option value="Python">Python</option>
+			<option value="Ruby">Ruby</option>
+			<option value="csharp">csharp</option>
+			<option value="Java">Java</option>
+		</datalist>
+	</div>
+	<!-- -->
+	<div>
+		<label>Url: </label>
+		<input type="url">
+	</div>
+	<!-- -->
+	<div>
+		<label>Semana: </label>
+		<input type="week">
+	</div>
+		<!-- -->
+	<div>
+		<button type="submit"> Enviar Datos </button>
+	</div>
+	</form>
+</body>
+</html>
